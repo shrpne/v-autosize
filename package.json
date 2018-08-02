@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shrpne/pretty-num.git"
+    "url": "git+https://github.com/shrpne/v-autosize.git"
   },
   "keywords": [
     "vue",
@@ -30,7 +30,7 @@
   "author": "shrpne <shrpne@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shrpne/pretty-num/issues"
+    "url": "https://github.com/shrpne/v-autosize/issues"
   },
   "dependencies": {
     "autosize": "^4.0.2"
