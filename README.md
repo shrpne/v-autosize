@@ -45,6 +45,13 @@ Use `v-autosize` directive on the `textarea` element
 ```
 
 
+## Comparison
+
+- This module: **3.7 kB Minified, 1.3 kB Gzipped**
+- [`vue-autosize`](https://github.com/mage3k/vue-autosize): 5.2 kB Minified, 1.9 kB Gzipped
+- [`vue-textarea-autosize`](https://github.com/devstark-com/vue-textarea-autosize): 3.5 kB Minified, 1.4 kB Gzipped. A component is used instead of a directive.
+
+
 ## License
 
 MIT License
