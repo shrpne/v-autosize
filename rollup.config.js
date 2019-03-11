@@ -7,8 +7,6 @@ const plugins = [
     commonjs(),
     resolve(),
     babel({
-        babelrc: false,
-        presets: [['env', { modules: false }]],
     }),
 ];
 
