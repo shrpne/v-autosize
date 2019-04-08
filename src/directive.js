@@ -1,16 +1,16 @@
 import autosize from 'autosize';
 
 export default {
-    bind(el, binding) {
+    bind(el, binding, vnode) {
         if (el.tagName === 'TEXTAREA') {
-            this.$nextTick(() => {
+            vnode.context.$nextTick(() => {
                 autosize(el);
             });
         }
     },
     componentUpdated(el, binding, vnode) {
         if (el.tagName === 'TEXTAREA') {
-            this.$nextTick(() => {
+            vnode.context.$nextTick(() => {
                 autosize.update(el);
             });
         }
