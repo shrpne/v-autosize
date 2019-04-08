@@ -17,7 +17,7 @@ npm install v-autosize
 ```
 
 
-## Usage
+## Register
 
 Register directive locally in the component
 ```js
@@ -39,6 +39,8 @@ import autosize from 'v-autosize/dist/plugin';
 Vue.use(autosize);
 ```
 
+## Use
+
 Use `v-autosize` directive on the `textarea` element
 ```html
 <textarea v-autosize></textarea>
@@ -47,9 +49,9 @@ Use `v-autosize` directive on the `textarea` element
 
 ## Comparison
 
-- This module: **3.7 kB Minified, 1.3 kB Gzipped**
-- [`vue-autosize`](https://github.com/mage3k/vue-autosize): 5.2 kB Minified, 1.9 kB Gzipped
-- [`vue-textarea-autosize`](https://github.com/devstark-com/vue-textarea-autosize): 3.5 kB Minified, 1.4 kB Gzipped. A component is used instead of a directive.
+- This module: [![Minified Size](https://img.shields.io/bundlephobia/min/v-autosize.svg?style=flat-square&label=minified)](https://bundlephobia.com/result?p=v-autosize) [![Minified Size](https://img.shields.io/bundlephobia/minzip/v-autosize.svg?style=flat-square&label=gzipped)](https://bundlephobia.com/result?p=v-autosize)
+- [`vue-autosize`](https://github.com/mage3k/vue-autosize): [![Minified Size](https://img.shields.io/bundlephobia/min/vue-autosize.svg?style=flat-square&label=minified)](https://bundlephobia.com/result?p=vue-autosize) [![Minified Size](https://img.shields.io/bundlephobia/minzip/vue-autosize.svg?style=flat-square&label=gzipped)](https://bundlephobia.com/result?p=vue-autosize)
+- [`vue-textarea-autosize`](https://github.com/devstark-com/vue-textarea-autosize): [![Minified Size](https://img.shields.io/bundlephobia/min/vue-textarea-autosize.svg?style=flat-square&label=minified)](https://bundlephobia.com/result?p=vue-textarea-autosize) [![Minified Size](https://img.shields.io/bundlephobia/minzip/vue-textarea-autosize.svg?style=flat-square&label=gzipped)](https://bundlephobia.com/result?p=vue-textarea-autosize). A component is used instead of a directive.
 
 
 ## License
