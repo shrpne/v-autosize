@@ -50,8 +50,8 @@ Use `v-autosize` directive on the `textarea` element
 ## Comparison
 
 - This module: [![Minified Size](https://img.shields.io/bundlephobia/min/v-autosize.svg?style=flat-square&label=minified)](https://bundlephobia.com/result?p=v-autosize) [![Minified Size](https://img.shields.io/bundlephobia/minzip/v-autosize.svg?style=flat-square&label=gzipped)](https://bundlephobia.com/result?p=v-autosize)
-- [`vue-autosize`](https://github.com/mage3k/vue-autosize): [![Minified Size](https://img.shields.io/bundlephobia/min/vue-autosize.svg?style=flat-square&label=minified)](https://bundlephobia.com/result?p=vue-autosize) [![Minified Size](https://img.shields.io/bundlephobia/minzip/vue-autosize.svg?style=flat-square&label=gzipped)](https://bundlephobia.com/result?p=vue-autosize)
-- [`vue-textarea-autosize`](https://github.com/devstark-com/vue-textarea-autosize): [![Minified Size](https://img.shields.io/bundlephobia/min/vue-textarea-autosize.svg?style=flat-square&label=minified)](https://bundlephobia.com/result?p=vue-textarea-autosize) [![Minified Size](https://img.shields.io/bundlephobia/minzip/vue-textarea-autosize.svg?style=flat-square&label=gzipped)](https://bundlephobia.com/result?p=vue-textarea-autosize). A component is used instead of a directive.
+- [`vue-autosize`](https://github.com/mage3k/vue-autosize): [![Minified Size](https://img.shields.io/bundlephobia/min/vue-autosize.svg?style=flat-square&label=minified)](https://bundlephobia.com/result?p=vue-autosize) [![Minified Size](https://img.shields.io/bundlephobia/minzip/vue-autosize.svg?style=flat-square&label=gzipped)](https://bundlephobia.com/result?p=vue-autosize) `autosize-input` included, not maintained.
+- [`vue-textarea-autosize`](https://github.com/devstark-com/vue-textarea-autosize): [![Minified Size](https://img.shields.io/bundlephobia/min/vue-textarea-autosize.svg?style=flat-square&label=minified)](https://bundlephobia.com/result?p=vue-textarea-autosize) [![Minified Size](https://img.shields.io/bundlephobia/minzip/vue-textarea-autosize.svg?style=flat-square&label=gzipped)](https://bundlephobia.com/result?p=vue-textarea-autosize) A component is used instead of a directive.
 
 
 ## License
