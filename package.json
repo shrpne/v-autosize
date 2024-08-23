@@ -2,6 +2,7 @@
   "name": "v-autosize",
   "version": "1.0.3",
   "description": "Lightweight Vue wrapper for `autosize`",
+  "type": "module",
   "main": "dist/directive.js",
   "module": "src/directive.js",
   "files": [
@@ -33,19 +34,20 @@
     "url": "https://github.com/shrpne/v-autosize/issues"
   },
   "dependencies": {
-    "autosize": "^4.0.2"
+    "autosize": "^6.0.1"
+  },
+  "peerDependencies": {
+    "vue": "^3"
   },
   "devDependencies": {
-    "@babel/core": "latest",
-    "@babel/preset-env": "latest",
-    "coveralls": "^3.0.4",
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.3",
-    "rollup": "^1.15.6",
-    "rollup-plugin-babel": "^4.3.2",
-    "rollup-plugin-commonjs": "^10.0.0",
-    "rollup-plugin-node-resolve": "^5.0.3",
-    "rollup-plugin-terser": "^5.0.0"
+    "rollup": "^4.21.0"
   }
 }
