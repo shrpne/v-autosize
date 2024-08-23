@@ -1,21 +1,26 @@
 import autosize from 'autosize';
 
-export default {
-    bind(el, binding, vnode) {
+/**
+ * @type {import('vue').Directive}
+ */
+const vAutosize = {
+    beforeMount(el, binding, vnode) {
         if (el.tagName === 'TEXTAREA') {
-            vnode.context.$nextTick(() => {
+            binding.instance.$nextTick(() => {
                 autosize(el);
             });
         }
     },
-    componentUpdated(el, binding, vnode) {
+    updated(el, binding, vnode) {
         if (el.tagName === 'TEXTAREA') {
-            vnode.context.$nextTick(() => {
+            binding.instance.$nextTick(() => {
                 autosize.update(el);
             });
         }
     },
-    unbind(el) {
+    unmounted(el) {
         autosize.destroy(el);
     },
 };
+
+export default vAutosize;

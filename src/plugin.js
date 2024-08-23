@@ -1,5 +1,12 @@
 import vAutosize from './directive.js';
 
-export default function (Vue) {
-    Vue.directive('autosize', vAutosize);
+/**
+ * @type {import('vue').Plugin}
+ */
+const plugin =  {
+    install: (app, options) => {
+        app.directive('autosize', vAutosize)
+    }
 }
+
+export default plugin;

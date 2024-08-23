@@ -1,20 +1,36 @@
 {
   "name": "v-autosize",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Lightweight Vue wrapper for `autosize`",
   "type": "module",
   "main": "dist/directive.js",
   "module": "src/directive.js",
+  "types": "types/directive.d.ts",
+  "exports": {
+    ".": {
+      "module": "./src/directive.js",
+      "import": "./src/directive.js",
+      "types": "./types/directive.d.ts",
+      "default": "./dist/directive.js"
+    },
+    "./src/*.js": {
+      "module": "./src/*.js",
+      "types": "./types/*.d.ts",
+      "default": "./dist/*.js"
+    }
+  },
   "files": [
     "/src/",
-    "/dist/"
+    "/dist/",
+    "/types/"
   ],
   "scripts": {
     "build": "rollup -c rollup.config.js",
     "prepublishOnly": "npm run test && npm run build",
     "lint": "eslint --ext .js ./src",
     "lint:fix": "eslint --ext .js ./src --fix",
-    "test": "npm run lint"
+    "tsc": "tsc -p .",
+    "test": "npm run lint && npm run tsc"
   },
   "repository": {
     "type": "git",
@@ -48,6 +64,7 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.17.3",
-    "rollup": "^4.21.0"
+    "rollup": "^4.21.0",
+    "typescript": "^5.5.4"
   }
 }
