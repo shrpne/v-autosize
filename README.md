@@ -5,15 +5,18 @@
 [![Build Status](https://img.shields.io/travis/com/shrpne/v-autosize/master.svg?style=flat-square)](https://travis-ci.com/shrpne/v-autosize)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://github.com/shrpne/v-autosize/blob/master/LICENSE)
 
-Lightweight Vue wrapper for [autosize](https://github.com/jackmoore/autosize).
+Lightweight Vue 2 wrapper for [autosize](https://github.com/jackmoore/autosize).
 Use `v-autosize` directive on the `textarea` element to make it automatically adjust height to fit text.
+
+### Using Vue 3?
+Check latest version [v-autosize@2](https://github.com/shrpne/v-autosize/tree/master?tab=readme-ov-file)
 
 
 
 ## Install
 
 ```
-npm install v-autosize
+npm install v-autosize@1
 ```
 
 
