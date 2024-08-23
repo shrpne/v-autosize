@@ -2,42 +2,36 @@
 
 module.exports = {
   root: true,
-  // parser: 'babel-eslint',
   // parserOptions: {
+  //   ecmaVersion: 2020,
   //   sourceType: 'module'
   // },
+  ignorePatterns: [
+    '.eslintrc.cjs',
+    'babel.config.js',
+    'rollup.conf.js',
+    'demo/**',
+    'dist/**',
+  ],
   env: {
     browser: true,
-    jest: true,
   },
-  // https://github.com/standard/standard/blob/master/docs/RULES-en.md
-  extends: 'airbnb-base',
-  // required to lint *.vue files
-  // plugins: [
-  //   'html'
-  // ],
-  // // add your custom rules here
+  extends: 'eslint-config-airbnb-base',
   rules: {
-    'indent': ["error", 4],
-    // allow paren-less arrow functions
-    'arrow-parens': 0,
-    // allow async-await
-    'generator-star-spacing': 0,
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'object-curly-spacing': 0,
+    'indent': ['error', 4, { 'SwitchCase': 1 }],
     // disable length limit
     'max-len': 0,
-    // allow `new Buffer()`
-    'no-buffer-constructor': 0,
     // allow assigning to function parameter
-    'no-param-reassign': 0,
-    'no-underscore-dangle': 0,
-    'no-else-return': 0,
+    'no-param-reassign':0,
     "no-unused-vars": ["warn", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
-    'no-use-before-define' : 0,
-    'object-curly-newline': 0,
-    'import/prefer-default-export': 1,
+    'no-use-before-define': 0,
+    'no-plusplus': ['error', { 'allowForLoopAfterthoughts': true }],
+    // allow let
+    'prefer-const': 'off',
+    'prefer-destructuring': ['error', {'object': true, 'array': false}],
+    // allow extension in imports
+    'import/extensions': 'off',
+    'prefer-object-spread': 'off',
   },
   overrides: [
     {
