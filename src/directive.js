@@ -4,7 +4,7 @@ import autosize from 'autosize';
  * @type {import('vue').Directive}
  */
 const vAutosize = {
-    beforeMount(el, binding, vnode) {
+    mounted(el, binding, vnode) {
         if (el.tagName === 'TEXTAREA') {
             binding.instance.$nextTick(() => {
                 autosize(el);
